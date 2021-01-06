@@ -4,7 +4,7 @@
 #include <cstring>
 #include <queue>
 
-// ±âº» Queue¸¦ ÀÌ¿ëÇÑ meeting program
+// ê¸°ë³¸ íë¥¼ ì´ìš©í•œ meeting program
 
 using namespace std;
 
