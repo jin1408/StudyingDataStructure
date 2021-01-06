@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include <cstring>
 #include <queue>
-
+// Deque를 이용한 meeting program
 
 using namespace std;
 
