@@ -4,7 +4,7 @@
 #include <cstring>
 #include <queue>
 #define Max_size 8
-
+// 원형 큐를 이용한 meeting program
 
 using namespace std;
 
