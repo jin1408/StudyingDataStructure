@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
+//í¬ì¸í„°ë¥¼ ì´ìš©í•œ ì´ì°¨ì›ë°°ì—´í• ë‹¹
 
 using namespace std;
 
@@ -30,7 +31,7 @@ void set2DRandom(int **mat, int rows, int cols){
 }
 
 void print2DInt(int **mat, int rows, int cols){
-    printf("ÇàÀÇ ¼ö =%d, ¿­ÀÇ¼ö = %d\n",rows, cols);
+    printf("í–‰ì˜ ìˆ˜ =%d, ì—´ì˜ìˆ˜ = %d\n",rows, cols);
     for(int i=0; i<rows; i++){
         for(int j=0; j<cols; j++){
             printf("%4d",mat[i][j]);
@@ -44,7 +45,7 @@ int main()
 {
     int **mat;
     int rows, cols;
-    cout<<"Çà°ú ¿­ ÀÔ·Â :";
+    cout<<"í–‰ê³¼ ì—´ ì…ë ¥ :";
     cin>>rows>>cols;
 
     mat = alloc2DInt(rows, cols);
