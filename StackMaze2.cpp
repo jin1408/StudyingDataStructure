@@ -3,6 +3,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include<stack>
+// stack과 이차원 동적 배열을 이용한 미로 탈출 프로그램
 
 using namespace std;
 
@@ -73,19 +74,19 @@ public:
     }
 
     void print(){
-        cout<<"��ü �̷��� ũ�� = "<<width<<" X " <<height<<endl;
+        cout<<"전체 미로의 크기 = "<<width<<" X " <<height<<endl;
         for(int i=0; i<height; i++){
             for(int j=0; j<width; j++){
                 if(map[i][j] ==1)
                     cout<<"  ";
                 else if(map[i][j] ==0)
-                    cout<<"��";
+                    cout<<"■";
                 else if(map[i][j] ==7)
-                    cout<<"��";
+                    cout<<"□";
                 else if(map[i][j] ==5)
-                    cout<<"��";
+                    cout<<"○";
                 else if(map[i][j] ==9)
-                    cout<<"��";
+                    cout<<"★";
             }
             cout<<endl;
         }
