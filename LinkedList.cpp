@@ -2,6 +2,9 @@
 #include <cstdio>
 #include <cstdlib>
 using namespace std;
+//c++을 사용한 단순 연결 리스트 구현
+// +연결 리스트의 모든 데이터 값을 출력하는 프로그램(Sum함수)
+// +연결 리스트의 특정 데이터 값의 개수를 찾는 프로그램(Search함수)
 
 class Node{
     Node* link;
@@ -86,7 +89,7 @@ public:
     }
 
     void display(){
-        printf("��ü �׸�� = %2d : ", size());
+        printf("전체 항목수 = %2d : ", size());
         for(Node* p=getHead(); p!=NULL; p=p->getLink())
             p->display();
         cout<<endl;
@@ -108,7 +111,7 @@ public:
             if(k == p->getData())
                 count++;
         }
-        cout<<"����Ʈ ���� 'k' ���� : "<<count<<endl;
+        cout<<"리스트 내의 'k' 개수 : "<<count<<endl;
     }
 
 };
