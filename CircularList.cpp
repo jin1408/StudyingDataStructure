@@ -2,6 +2,7 @@
 #include <cstdio>
 #include <cstdlib>
 using namespace std;
+//원형 리스트 구현 
 
 struct Node
 {
@@ -129,10 +130,10 @@ public:
         {
                if (size() == 1)
                {
-                       cout << "[��ü �׸� ��= 0]: " << endl;
+                       cout << "[ÀüÃ¼ Ç×¸ñ ¼ö= 0]: " << endl;
                        return;
                }
-               cout << "[��ü �׸� �� = " << size() << "] : ";
+               cout << "[ÀüÃ¼ Ç×¸ñ ¼ö = " << size() << "] : ";
                Node *current = head;
                cout << "<" << current->data << "> ";
                current = current->link;
