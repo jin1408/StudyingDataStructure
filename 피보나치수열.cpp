@@ -2,6 +2,7 @@
 #include <cstdio>
 #include <cstdlib>
 using namespace std;
+//피보나치 수열 출력 및 호출 빈도를 계산한 프로그램 
 
 int fib(int *count, int n){
     count[n]++;
@@ -21,7 +22,7 @@ int main()
         count[i] =0;
     fib(count, num);
     for(int i=0; i<num+1; i++)
-        printf("Fibo(%d) = %d��\n",i,count[i]);
+        printf("Fibo(%d) = %d¹ø\n",i,count[i]);
 
 	return 0;
 }
