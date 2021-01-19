@@ -5,10 +5,10 @@ using namespace std;
 
 void hanoiTower(int n, char from, char tmp, char to){
     if(n==1)
-        printf("¿øÆÇ 1À» %c -> %c ·Î ¿Å±è\n", from, to);
+        printf("ì›íŒ 1ì„ %c -> %c ë¡œ ì˜®ê¹€\n", from, to);
     else{
         hanoiTower(n-1, from, to, tmp);
-        printf("¿øÆÇ %dÀ» %c -> %c ·Î ¿Å±è\n", n, from, to);
+        printf("ì›íŒ %dì„ %c -> %c ë¡œ ì˜®ê¹€\n", n, from, to);
         hanoiTower(n-1,tmp, from, to);
     }
 }
