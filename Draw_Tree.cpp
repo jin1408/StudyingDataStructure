@@ -3,6 +3,9 @@
 #include <cstdlib>
 #include <cstring>
 using namespace std;
+// 3행의 줄을 가진 같은모양을 순환하여 출력하는 함수(미완성...)
+
+
 int Left = 0;;
 int Right = 40;
 int shape[40];
