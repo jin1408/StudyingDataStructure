@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include <cstring>
 using namespace std;
-
+// 문자열을 입력받아 거꾸로 출력하는 
 void reverse(string w, int len){
     if(len == -1){
         return ;
