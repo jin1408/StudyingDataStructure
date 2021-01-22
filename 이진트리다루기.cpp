@@ -4,6 +4,11 @@
 #include <cstring>
 #include <queue>
 using namespace std;
+//ê° íŠ¸ë¦¬ ì •ë ¬ ê³µë¶€(inorder, preorder, postorder)
+//ì™„ì „ ì´ì§„íŠ¸ë¦¬ì¸ì§€ í™•ì¸í•˜ëŠ” í•¨ìˆ˜ êµ¬í˜„(isFull)
+//ì„ì˜ì˜ ë…¸ë“œì˜ ë ˆë²¨ ê³„ì‚°(level ë° levelCount)
+//ëª¨ë“  ë…¸ë“œì— ëŒ€í•œ path í•© ê³„ì‚°(pathLength)
+//ë£¨íŠ¸ë¥¼ ì œì™¸í•œ ë‚˜ë¨¸ì§€ ë…¸ë“œ ì¢Œìš° ëŒ€ì¹­(reverse)
 
 class BinaryNode{
 protected:
@@ -199,18 +204,18 @@ int main()
    BinaryNode *a = new BinaryNode('A', b, e);
    tree.setRoot(a);
    if(tree.isFull())
-    cout<<"¿ÏÀü ÀÌÁøÆ®¸®"<<endl;
+    cout<<"ì™„ì „ ì´ì§„íŠ¸ë¦¬"<<endl;
    else{
-    cout<<"¿ÏÀü ÀÌÁøÆ®¸® ¾Æ´Ô"<<endl;
+    cout<<"ì™„ì „ ì´ì§„íŠ¸ë¦¬ ì•„ë‹˜"<<endl;
    }
 
-	cout<<"CÀÇ ·¹º§ : "<<tree.level(c)<<endl;
-	cout<<"Path ÃÑ ÇÕ : "<<tree.pathLength()<<endl;
+	cout<<"Cì˜ ë ˆë²¨ : "<<tree.level(c)<<endl;
+	cout<<"Path ì´ í•© : "<<tree.pathLength()<<endl;
 	tree.inorder(a);
 	if(tree.reverse())
-        cout<<"Tree µÚÁı±â ¼º°ø"<<endl;
+        cout<<"Tree ë’¤ì§‘ê¸° ì„±ê³µ"<<endl;
     else
-        cout<<"Tree µÚÁı±â ½ÇÆĞ"<<endl;
+        cout<<"Tree ë’¤ì§‘ê¸° ì‹¤íŒ¨"<<endl;
     tree.inorder(a);
 	return 0;
 
