@@ -4,6 +4,8 @@
 #include <stack>
 #define MAX_ELEMENT 200
 using namespace std;
+//MinHeap을 구현하며 단어의 빈도 수에 따라 그에맞는 코드를 결정할 수 있는 허프만 코드를 구현함
+// 기초적인 단계이므로 만들어진 트리로 가변 길이 코드를 만들기 위해서는 추가적인 코드가 필요함
 
 class HeapNode {
 	int key;
